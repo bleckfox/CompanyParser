@@ -23,8 +23,6 @@ namespace Parser
                 .SetWork(work)
                 .SetOkved(okved)
                 .Build(baseUrl);
-
-            // https://www.list-org.com/search?val=Санкт-Петербург&type=address&work=on&is_phone=on&is_www=on&is_email=on&okved=43.22
         }
 
         public async Task<bool> DownloadFileAsync(string linkToDownLoadFile, string filePath, HttpClient client, CancellationToken cancellationToken)
